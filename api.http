@@ -1,0 +1,30 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Unite Summit",
+    "details": "Um evento para quem é apaixonado por programação!",
+    "maximumAttendees": 100
+}
+
+
+###
+POST http://localhost:3333/events/1c692ddc-6256-4e9f-bc44-7f9b2b3edc93/attendees
+Content-Type: application/json
+
+{
+    "name": "Marcos Douglas",
+    "email": "mardousilva@gmail.com"
+}
+
+###
+GET http://localhost:3333/attendees/1/check-in
+
+###
+GET http://localhost:3333/events/1c692ddc-6256-4e9f-bc44-7f9b2b3edc93
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/events/1c692ddc-6256-4e9f-bc44-7f9b2b3edc93/attendees
